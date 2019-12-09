@@ -87,7 +87,8 @@ define(()=>{
                 width:80,
                 lineHeight:"26px",
                 backgroundColor: "#ff6600",
-                border:"none"
+                border:"none",
+                color:"#fff",
             }).html("登录").on("click",function () {
                 this1.data.push(this1.user.val());
                 this1.data.push(this1.password.val());
@@ -100,7 +101,8 @@ define(()=>{
                 width:80,
                 lineHeight:"26px",
                 backgroundColor: "#ff6600",
-                border:"none"
+                border:"none",
+                color:"#fff",
             }).html("注册").on("click",function () {
                 this1.data.push(this1.user.val());
                 this1.data.push(this1.password.val());

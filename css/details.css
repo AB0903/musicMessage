@@ -6,109 +6,108 @@
   width: 1210px;
   margin: 0 auto; }
 
-main .main {
+main .Mmain {
   margin-top: 50px;
   display: flex; }
-  main .main #left {
+  main .Mmain #left {
     width: 400px;
     height: 400px; }
-    main .main #left .box {
+    main .Mmain #left .box {
       width: 400px;
       height: 400px;
       border: 1px solid #000000;
       position: relative; }
-      main .main #left .box img {
+      main .Mmain #left .box img {
         width: 400px;
         height: 400px; }
-      main .main #left .box span {
+      main .Mmain #left .box span {
         position: absolute;
         left: 0;
         top: 0;
         opacity: .5;
         background: #cccccc;
         display: none; }
-    main .main #left .big {
+    main .Mmain #left .big {
       width: 400px;
       height: 400px;
       position: absolute;
       z-index: 999;
-      left: 440px;
-      top: -30px;
+      left: 500px;
+      top: 360px;
       border: 1px solid darkcyan;
       overflow: hidden;
       display: none; }
-      main .main #left .big img {
+      main .Mmain #left .big img {
         width: 900px;
         height: 900px;
         position: absolute; }
-  main .main #right {
+  main .Mmain #right {
     width: 560px;
     height: 412px;
     margin-left: 50px; }
-    main .main #right .name {
+    main .Mmain #right .name {
       padding: 5px 0 0 0; }
-    main .main #right .summary {
+    main .Mmain #right .summary {
       width: 100%;
       margin-top: 30px;
       background-color: #f7f7f7; }
-      main .main #right .summary i {
+      main .Mmain #right .summary i {
         margin-right: 3px;
         font-size: 18px; }
-      main .main #right .summary span {
+      main .Mmain #right .summary span {
         font-size: 30px;
         color: #ff6600;
         font-weight: 500; }
-    main .main #right .choose {
+    main .Mmain #right .choose {
       margin-top: 50px;
       width: 560px;
       height: 120px; }
-      main .main #right .choose .clear {
+      main .Mmain #right .choose .clear {
         height: 50px; }
-        main .main #right .choose .clear .left {
+        main .Mmain #right .choose .clear .left {
           float: left;
           margin-right: 15px;
           display: flex; }
-          main .main #right .choose .clear .left input {
+          main .Mmain #right .choose .clear .left input {
             height: 50px;
             width: 30px;
             text-align: center;
             display: block;
             border: 1px solid #cccccc;
             line-height: 50px; }
-          main .main #right .choose .clear .left button {
+          main .Mmain #right .choose .clear .left button {
             border: 1px solid #cccccc;
             border-left: none;
             width: 20px;
             font-size: 20px; }
-        main .main #right .choose .clear .right {
+        main .Mmain #right .choose .clear .right {
           float: left;
           height: 50px; }
-          main .main #right .choose .clear .right button {
+          main .Mmain #right .choose .clear .right button {
             width: 168px;
             margin-right: 20px;
             color: #ffffff;
             width: 168px;
             font: 700 18px/50px "";
             text-align: center; }
-          main .main #right .choose .clear .right .btn3 {
+          main .Mmain #right .choose .clear .right .btn3 {
             background-color: #FF0036; }
-          main .main #right .choose .clear .right .btn4 {
+          main .Mmain #right .choose .clear .right .btn4 {
             background-color: #ff6600; }
-    main .main #right .zhifu {
+    main .Mmain #right .zhifu {
       margin-top: 10px;
       height: 20px;
       line-height: 20px; }
-      main .main #right .zhifu .dt {
+      main .Mmain #right .zhifu .dt {
         float: left;
         margin-right: 30px;
         color: #999999; }
-      main .main #right .zhifu .dd {
+      main .Mmain #right .zhifu .dd {
         float: left; }
-        main .main #right .zhifu .dd span {
-            position: relative;
+        main .Mmain #right .zhifu .dd span {
           float: left;
           margin-bottom: 4px;
           background: #ffffff;
           margin-left: 15px; }
-          main .main #right .zhifu .dd span i {
+          main .Mmain #right .zhifu .dd span i {
             font-size: 16px; }

@@ -26,7 +26,7 @@ define(()=>{
                 position: "absolute",
                 backgroundColor:"#fff",
                 display:"none",
-            })
+            });
             this.data.css({
                 position:"relative"
             }).append(this.list);
