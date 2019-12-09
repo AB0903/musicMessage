@@ -69,6 +69,20 @@
       "unicode_decimal": 58916
     },
     {
+      "icon_id": "3060292",
+      "name": "财付通",
+      "font_class": "caifutong",
+      "unicode": "e7a8",
+      "unicode_decimal": 59304
+    },
+    {
+      "icon_id": "3069385",
+      "name": "货到付款",
+      "font_class": "huodaofukuan",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
       "icon_id": "3755856",
       "name": "爱心",
       "font_class": "aixin",
@@ -88,6 +102,20 @@
       "font_class": "gerentouxiang",
       "unicode": "eb24",
       "unicode_decimal": 60196
+    },
+    {
+      "icon_id": "5469897",
+      "name": "银行卡",
+      "font_class": "bank",
+      "unicode": "e76b",
+      "unicode_decimal": 59243
+    },
+    {
+      "icon_id": "5552872",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
     },
     {
       "icon_id": "6198607",
@@ -123,6 +151,20 @@
       "font_class": "tubiao-",
       "unicode": "e606",
       "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "8472287",
+      "name": "微信 支付",
+      "font_class": "weixinzhifu",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "8726515",
+      "name": "钱",
+      "font_class": "qian",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
     },
     {
       "icon_id": "10152099",
