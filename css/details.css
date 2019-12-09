@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.margin{
+    width: 1210px;
+    margin: 0 auto
+}
+header{
+   height: 36px;
+   display: flex;
+   justify-content: space-between;
+   line-height: 36px;
+   background: #FCFCFC;
+   border-bottom: 1px solid #EDEEF0
+}
+header #left span{
+    color: #666666;
+}
+header #left i{
+    color: #ff6600;
+    cursor: pointer;
+}
+header #right i{
+    font-size: 16px;
+}
+header #right span{
+    cursor: pointer;
+    margin: 0 10px
+}
+nav{
+    height: 140px;
+    padding-top: 20px
+}
