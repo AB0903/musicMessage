@@ -4,6 +4,9 @@ require.config({
         jq:"../../libs/jquery"
     }
 });
-require(["jq","car"],(_,car)=>{
-    // new car();
+require(["jq","shopCar"],(_,shopCar)=>{
+    new shopCar({
+        nul:$("#shopping").children(".bottom"),
+        goods:$("#carBox"),
+    });
 });

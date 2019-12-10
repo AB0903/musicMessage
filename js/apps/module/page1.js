@@ -36,7 +36,7 @@ define(() => {
             <div class="fc-b-l">
                 <div class="cu">促</div>
                     <div class="item-a">
-                    <a href="href="details.html?id=${this.res[1].showId}">
+                    <a href="http://localhost/1911-server/online/details.html?id=${this.res[1].showId}">
                         <p class="name">${this.res[1].name}</p>
                          <p class="price"><i>￥</i>${this.res[1].pirce}</p>
                         <img src="${this.res[1].url}">
@@ -49,9 +49,11 @@ define(() => {
             <div class="fc-b-r">
                 <div class="cu">促</div>
                     <div class="item-a">
+                    <a href="http://localhost/1911-server/online/details.html?id=${this.res[2].showId}">
                         <p class="name">${this.res[2].name}</p>
                         <p class="price"><i>￥</i>${this.res[2].pirce}</p>
                         <img src="${this.res[2].url}">
+                        </a>
                     </div>    
                 </div>
             </div>
@@ -65,9 +67,11 @@ define(() => {
                     <div class="fr-l">
                         <div class="cu">促</div>
                         <div class="item-a">
+                        <a href="http://localhost/1911-server/online/details.html?id=${this.res[i].showId}">
                             <p class="name">${this.res[i].name}</p>
                             <p class="price"><i>￥</i>${this.res[i].pirce}</p>
                             <img src="${this.res[i].url}">
+                            </a>
                         </div>
                     </div>
                     `

@@ -13,7 +13,7 @@ define(()=>{
    class jump{
        constructor(options){
            this.Id = getQueryVariable("id");
-           this.url = options.url;
+           this.url = options.url || options.url1;
            this.img = options.img;
            this.name = options.name;
            this.price = options.price;
