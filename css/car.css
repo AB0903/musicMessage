@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#shopping {
+  width: 1210px;
+  padding-top: 36px;
+  margin: 0 auto; }
+  #shopping .top {
+    position: relative;
+    height: 100px; }
+    #shopping .top .logo {
+      width: 220px;
+      float: left; }
+    #shopping .top .cart {
+      float: right;
+      width: 662px;
+      height: 35px;
+      margin-top: 30px;
+      background-image: url(../images/icar.png);
+      background-repeat: no-repeat;
+      background-position: 0 0; }
+      #shopping .top .cart ul {
+        height: 35px; }
+        #shopping .top .cart ul li {
+          color: #333333;
+          font-size: 14px;
+          font-weight: 700;
+          width: 218px;
+          float: left;
+          height: 35px;
+          line-height: 35px;
+          text-align: center; }
+  #shopping .bottom {
+    position: relative;
+    height: 218px;
+    font-size: 16px;
+    background: url(../images/car.png) 336px 91px no-repeat; }
+    #shopping .bottom .wrap {
+      position: absolute;
+      left: 400px;
+      top: 96px; }
+      #shopping .bottom .wrap a {
+        color: #38d; }

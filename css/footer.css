@@ -1,3 +1,7 @@
+.margin{
+    width: 1210px;
+    margin: 0 auto;
+}
 footer {
   position: relative;
   margin-top: 50px; }

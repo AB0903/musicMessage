@@ -11,7 +11,7 @@ define(()=>{
             },function () {
                 this1.out()
             });
-            this.options.span.on("mousemove",function (e) {
+            $(document).on("mousemove",function (e) {
                 this1.move(e)
             })
         }
@@ -32,7 +32,6 @@ define(()=>{
         move(e){
             this.l = (e.clientX - this.options.smallB[0].offsetLeft - this.options.span[0].offsetWidth/2);
             this.t = (e.clientY - (this.options.smallB[0].offsetTop - this.options.span[0].offsetHeight/2));
-            console.log(this.t);
             if( this.l < 0){
                 this.l = 0
             }
@@ -43,7 +42,6 @@ define(()=>{
                 this.t=0
             }
             if(this.t > this.SH - this.options.span[0].offsetHeight){
-                console.log(this.SH - this.options.span[0].offsetHeight);
                 this.t = this.SH - this.options.span[0].offsetHeight
             }
             $(this.options.span).css({

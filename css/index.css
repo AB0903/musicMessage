@@ -213,7 +213,7 @@ section .visible ul {
     section .visible ul li .linkBox {
       box-shadow: 0 0 1px black;
       background-color: #ffffff;
-      height: 200px;
+      height: 240px;
       overflow: hidden;
       text-align: center;
       padding: 0 14px; }

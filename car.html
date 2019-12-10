@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/car.css">
+</head>
+<body>
+<div id="shopping">
+    <div class="top">
+        <div class="logo">
+            <a href="index.html" title="音平商城">
+                <img src="images/logo.png">
+            </a>
+        </div>
+        <div class="cart">
+            <ul>
+                <li>1 我的购物车</li>
+                <li>2 确认订单信息</li>
+                <li>3 成功提交订单</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="wrap">
+            <p>
+                购物车里空空如也，赶紧去&nbsp;
+                <a href="index.html">逛逛吧></a>
+            </p>
+            <p>
+                或者您可以先进行&nbsp;
+                <a href="index.html">登录></a>
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Footer">
+
+</div>
+<script src="js/libs/require.js" data-main="js/apps/car"></script>
+<script src="js/libs/jquery.js"></script>
+<script>
+    $("#Footer").load("http://localhost/1911-server/online/public.html footer");
+</script>
+</body>
+</html>

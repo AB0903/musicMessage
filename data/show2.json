@@ -1,0 +1,38 @@
+[
+    {
+        "name":"性价比录音配置",
+        "pirce":"2828.00",
+        "url":"images/one1.png",
+        "showId":"h11"
+    },
+    {
+        "name":"中小型录音室高配优选",
+        "pirce":"68417.00",
+        "url":"images/one4.png",
+        "showId":"h12"
+    },
+    {
+        "name":"爱科技C414XLII麦克风",
+        "pirce":"7188.00",
+        "url":"images/one2.jpg",
+        "showId":"h13"
+    },
+    {
+        "name":"雅马哈HS5I监听音箱",
+        "pirce":"1749.00",
+        "url":"images/one3.jpg",
+        "showId":"h14"
+    },
+    {
+        "name":"美奥多Oxygen88键盘",
+        "pirce":"4599.00",
+        "url":"images/one5.jpg",
+        "showId":"h15"
+    },
+    {
+        "name":"RME UCX专业录音声卡",
+        "pirce":"10299.00",
+        "url":"images/one6.jpg",
+        "showId":"h16"
+    }
+]
