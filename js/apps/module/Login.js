@@ -3,7 +3,8 @@ define(()=>{
         constructor(options){
             this.options = options;
             this.data = [];
-            this.add()
+            this.add();
+            
         }
         add(){
             var this1 = this;
@@ -45,6 +46,7 @@ define(()=>{
                     position: "absolute",
                     top:80,
                     left: 130,
+                backgroundColor:"#fff",
                 }).appendTo(this.box);
             this.password = $("<input>").css({
                 width:240,
@@ -52,6 +54,7 @@ define(()=>{
                 position: "absolute",
                 top:120,
                 left: 130,
+                backgroundColor:"#fff",
             }).appendTo(this.box);
             this.pass = $("<input>").css({
                 width:240,
@@ -59,6 +62,7 @@ define(()=>{
                 position: "absolute",
                 top:160,
                 left: 130,
+                backgroundColor:"#fff",
             });
             this.options.login.on("click",function () {
                 $(this1.btn1).css({
@@ -90,9 +94,24 @@ define(()=>{
                 border:"none",
                 color:"#fff",
             }).html("登录").on("click",function () {
-                this1.data.push(this1.user.val());
-                this1.data.push(this1.password.val());
-                $(this1.box).hide(200)
+                let str = getCookie("userMsg");
+                let isBeing = false;
+                if(str){
+                this1.str1 = JSON.parse(str);
+                this1.obj = {
+                    user:$(this1.user).val(),
+                    pass:$(this1.password).val(),
+                }
+                for(let i = 0;i<this1.str1.length;i++){
+                    if(this1.str1[i].user == this1.obj.user){
+                        isBeing = true;
+                        $(this1.box).hide(200);
+                    }
+                }
+                if(!isBeing){
+                    alert("用户名不存在");
+                }
+            };
             });
             this.btn2=$("<button>").css({
                 position:"absolute",
@@ -104,8 +123,14 @@ define(()=>{
                 border:"none",
                 color:"#fff",
             }).html("注册").on("click",function () {
-                this1.data.push(this1.user.val());
-                this1.data.push(this1.password.val());
+                this1.obj = {
+                    user:this1.user.val(),
+                    pass:this1.password.val(),
+                }
+                this1.data.push(this1.obj);
+                setCookie("userMsg",JSON.stringify(this1.data),{
+                    expires:5
+                })
                 $(this1.box).hide(200)
             });
         }

@@ -5,10 +5,10 @@ require.config({
     }
 });
 require(["jq","Login","big"],(_,  Login  ,Bigimg)=>{
-    // new Login({
-    //         login:$("header").children("#left").children("i").eq(0),
-    //         require:$("header").children("#left").children("i").eq(1),
-    //     });
+    new Login({
+            login:$("header").children("#left").children("i").eq(0),
+            require:$("header").children("#left").children("i").eq(1),
+        });
         new Bigimg({
             smallB:$(".Mmain").find(".box"),
             span:$(".Mmain").find(".box").children("span"),

@@ -5,7 +5,7 @@ require.config({
     }
 });
 
-require(["jq","Tab","list","morelist","Floor","Login"],(_, Tab, list, morelist, Floor,Login)=>{
+require(["jq","Tab","list","morelist","Floor","Login","cookie"],(_, Tab, list, morelist, Floor,Login)=>{
     new Tab({
         ali:$(".nav-index").find("li")
     });
