@@ -19,21 +19,33 @@ define(()=>{
             this.number = options.number;
             this.g = this.number.val();
             this.arr =[];
-            console.log(this.btn1);
-            console.log(this.btn2);
-            console.log(this.number);
             this.addEvent();
             this.init();
         }
         init(){
             var this1 = this;
             this.btn.on("click",function () {
+                this1.arr = getCookie("numGoods") ? JSON.parse(getCookie("numGoods")) : [];
+                // console.log(goods);
                 this1.obj = {
-                  name:this1.key,
-                  num:this1.number.val(),
+                    name:this1.key,
+                    num: +this1.number.val(),
                 };
-                this1.arr.push(this1.obj);
-                setCookie("numGoods",JSON.stringify(this1.obj),{
+                if(this1.arr.length<1){
+                    this1.arr.push(this1.obj);
+                }else{
+                    console.log(this1.arr);
+                    let isBeing = this1.arr.some((a,b,c)=>{
+                        this1.idx = b;
+                        return(a.name === this1.key)
+                    });
+                    if(isBeing){
+                        this1.arr[this1.idx].num = (+this1.arr[this1.idx].num) + (+this1.number.val());
+                    }else{
+                        this1.arr.push((this1.obj))
+                    }
+                }
+                setCookie("numGoods",JSON.stringify(this1.arr),{
                     expires:3
                 });
             })

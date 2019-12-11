@@ -30,16 +30,10 @@ define(()=>{
                 this.img = this.goods.find("img");
                 this.name = this.goods.find(".cart-c").find(".cl2").children("h2");
                 this.p = this.goods.find(".cart-c").find(".cl3").children("span");
-                this.num = this.goods.find(".cart-c").find(".cl4").find("input");
-                this.all = this.goods.find(".cart-c").find(".cl5").find("span");
-                this.delete = this.goods.find(".cart-c").find(".cl6").children("button");
-                console.log(this.img[0]);
-                console.log(this.name[0]);
-                console.log(this.p[0]);
-                console.log(this.num[0]);
-                console.log(this.all[0]);
-                console.log(this.delete[0]);
                 this.display();
+                let str1 = getCookie("numGoods");
+                this.str2 = JSON.parse(str1);
+
             }
         }
         display(){
@@ -54,22 +48,69 @@ define(()=>{
             });
         }
         add(res){
+            let this1 = this;
+            let string = "";
+            for(let j = 0;j<this.str2.length;j++){
+                string += `
+            <div class="goods ${res[j].showId}">
+                <ul>
+                    <li>
+                        <div class="fix">
+                            <div class="cl1">
+                                <input type="checkbox">
+                            </div>
+                            <div class="cl2">
+                                <a><img src="${res[j].url}"></a>
+                                <h2>${res[j].name}</h2>
+                            </div>
+                            <div class="cl3">
+                                <s>￥</s><span>${res[j].pirce}</span>
+                            </div>
+                            <div class="cl4">
+                                <span>
+                                    <span class="minus">-</span>
+                                    <input type="text" value="">
+                                    <span class="plus">+</span>
+                                </span>
+                            </div>
+                            <div class="cl5">
+                                <s>￥</s><span class="sum"></span>
+                            </div>
+                            <div class="cl6">
+                                <button>删除</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                `
+            }
+            this.goods.children(".cart").children(".cart-c").html(string);
             for(let i = 0; i<res.length;i++){
                 if(res[i].showId === this.idx){
                     this.route = this.res[i]
                 }
             }
-            console.log(this.route)
-            this.img[0].src= this.route.url;
-            this.name.html(this.route.name);
-            this.p.html(this.route.pirce);
+            console.log(this.route);
             let str = getCookie("numGoods");
             let str1 = JSON.parse(str);
-
-            this.num.val(str1.num);
-            this.all.html(str1.num*this.route.pirce);
+            this.num = this.goods.find(".cart-c").find(".cl4").find("input");
+            this.all = this.goods.find(".cart-c").find(".cl5").find("span");
+            for(let k =0 ;k<str1.length;k++){
+                this.num[k].value = str1[k].num;
+                this.all[k].innerHTML = this.num[k].value * this.route.pirce;
+            }
+            this.delete = this.goods.find(".cart-c").find(".cl6").children("button");
+            this.delete.on("click",function () {
+                let a = $(this).parent().parent().parent().parent().parent().attr("class");
+                let cl = this1.delete.parent().parent().parent().parent().parent();
+                for(let c =0 ;c<cl.length;c++){
+                    if(a===$(cl[c]).attr("class")){
+                        cl[c].remove();
+                    }
+                }
+            })
         }
-
     }
     return shopCar
 });
