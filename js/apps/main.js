@@ -5,7 +5,7 @@ require.config({
     }
 });
 
-require(["jq","Tab","list","morelist","Floor","Login","cookie","Ajax-all","page","page1","page2"],(_, Tab, list, morelist, Floor,Login,___,__,page,page1,page2x)=>{
+require(["jq","Tab","list","morelist","Floor","Login","cookie","Ajax-all","page"],(_, Tab, list, morelist, Floor,Login,___,__,page)=>{
     new Tab({
         ali:$(".nav-index").find("li")
     });
@@ -25,15 +25,8 @@ require(["jq","Tab","list","morelist","Floor","Login","cookie","Ajax-all","page"
         url:"http://localhost/1911-server/online/data/view.json",
         linkBox:$(".linkBox"),
         ul:$(".visible").children("ul"),
-    });
-    new page1({
-        url:"http://localhost/1911-server/online/data/show.json",
         fc:$(".fc"),
         fr:$(".fr"),
     });
-    // new page2({
-    //     url:"http://localhost/1911-server/online/data/show2.json",
-    //     mc:$(".Main-c"),
-    //     mr:$(".Main-r"),
-    // })
+
 });

@@ -42,3 +42,139 @@
       top: 96px; }
       #shopping .bottom .wrap a {
         color: #38d; }
+
+#carBox {
+  width: 1210px;
+  margin: 0 auto;
+  margin-top: 50px; }
+  #carBox h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e4393c;
+    line-height: 32px;
+    margin-top: 15px; }
+  #carBox .cart {
+    height: 512px; }
+    #carBox .cart .head {
+      color: #999;
+      border: 1px solid #eaeaea;
+      border-bottom: none;
+      height: 42px;
+      line-height: 42px; }
+      #carBox .cart .head .co1 {
+        width: 114px; }
+        #carBox .cart .head .co1 label {
+          color: #000;
+          font-weight: 100; }
+      #carBox .cart .head .co, #carBox .cart .head .co1, #carBox .cart .head .co2, #carBox .cart .head .co3, #carBox .cart .head .co4, #carBox .cart .head .co5, #carBox .cart .head .co6 {
+        float: left;
+        padding: 0 10px;
+        font-size: 13px;
+        color: #666; }
+      #carBox .cart .head .co2 {
+        width: 415px; }
+      #carBox .cart .head .co3 {
+        width: 150px; }
+      #carBox .cart .head .co4 {
+        width: 150px; }
+      #carBox .cart .head .co5 {
+        width: 150px; }
+      #carBox .cart .head .co6 {
+        width: 85px; }
+    #carBox .cart .cart-c {
+      border: 1px solid #eaeaea; }
+      #carBox .cart .cart-c .goods {
+        color: #333; }
+        #carBox .cart .cart-c .goods ul li {
+          border-bottom: 1px solid #eaeaea;
+          padding: 22px 0;
+          position: relative;
+          width: 100%; }
+          #carBox .cart .cart-c .goods ul li .fix .cl, #carBox .cart .cart-c .goods ul li .fix .cl1, #carBox .cart .cart-c .goods ul li .fix .cl2, #carBox .cart .cart-c .goods ul li .fix .cl3, #carBox .cart .cart-c .goods ul li .fix .cl4, #carBox .cart .cart-c .goods ul li .fix .cl5, #carBox .cart .cart-c .goods ul li .fix .cl6 {
+            float: none;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 10px;
+            color: #666; }
+          #carBox .cart .cart-c .goods ul li .fix .cl1 {
+            padding-right: 0;
+            width: 25px;
+            position: relative; }
+          #carBox .cart .cart-c .goods ul li .fix .cl2 {
+            padding: 0 10px 0 0;
+            width: 520px; }
+            #carBox .cart .cart-c .goods ul li .fix .cl2 a {
+              float: left;
+              width: 80px;
+              height: 80px; }
+              #carBox .cart .cart-c .goods ul li .fix .cl2 a img {
+                width: 80px;
+                height: 80px;
+                border: 1px solid #eaeaea; }
+            #carBox .cart .cart-c .goods ul li .fix .cl2 h2 {
+              margin: 20px 0 0 20px;
+              width: 345px;
+              float: left;
+              height: 36px;
+              overflow: hidden;
+              line-height: 18px; }
+          #carBox .cart .cart-c .goods ul li .fix .cl3 {
+            width: 130px;
+            color: #333;
+            font-size: 14px; }
+          #carBox .cart .cart-c .goods ul li .fix .cl4 {
+            width: 164px; }
+            #carBox .cart .cart-c .goods ul li .fix .cl4 span {
+              display: inline-block;
+              background-color: #ffffff;
+              font-size: 16px;
+              margin-top: 4px; }
+              #carBox .cart .cart-c .goods ul li .fix .cl4 span input {
+                float: left;
+                width: 43px;
+                height: 20px;
+                line-height: 20px;
+                border: 1px solid #bcbcbc;
+                text-align: center; }
+              #carBox .cart .cart-c .goods ul li .fix .cl4 span span {
+                float: left;
+                width: 20px;
+                text-align: center; }
+          #carBox .cart .cart-c .goods ul li .fix .cl5 {
+            width: 150px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #ff6600; }
+          #carBox .cart .cart-c .goods ul li .fix .cl6 button {
+            color: #333;
+            height: 25px;
+            line-height: 25px;
+            cursor: pointer;
+            width: 60px;
+            background: #ff6600;
+            border: none;
+            border-radius: 3px; }
+    #carBox .cart .toTal {
+      margin: 15px 0;
+      height: 76px; }
+      #carBox .cart .toTal .bar {
+        width: 1210px; }
+        #carBox .cart .toTal .bar .rt {
+          display: flex;
+          justify-content: space-between; }
+          #carBox .cart .toTal .bar .rt .allGoods {
+            font-size: 16px; }
+          #carBox .cart .toTal .bar .rt .money {
+            font-size: 14px; }
+            #carBox .cart .toTal .bar .rt .money span {
+              color: #ff6600; }
+          #carBox .cart .toTal .bar .rt button {
+            margin-right: 25px;
+            border: none;
+            width: 140px;
+            text-align: center;
+            font-size: 18px;
+            background-color: #e50007;
+            color: #ffffff;
+            cursor: pointer;
+            height: 76px; }

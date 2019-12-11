@@ -101,9 +101,9 @@ define(()=>{
                 this1.obj = {
                     user:$(this1.user).val(),
                     pass:$(this1.password).val(),
-                }
+                };
                 for(let i = 0;i<this1.str1.length;i++){
-                    if(this1.str1[i].user == this1.obj.user){
+                    if(this1.str1[i].user === this1.obj.user){
                         isBeing = true;
                         $(this1.box).hide(200);
                     }
@@ -111,7 +111,7 @@ define(()=>{
                 if(!isBeing){
                     alert("用户名不存在");
                 }
-            };
+            }
             });
             this.btn2=$("<button>").css({
                 position:"absolute",
@@ -126,11 +126,11 @@ define(()=>{
                 this1.obj = {
                     user:this1.user.val(),
                     pass:this1.password.val(),
-                }
+                };
                 this1.data.push(this1.obj);
                 setCookie("userMsg",JSON.stringify(this1.data),{
                     expires:5
-                })
+                });
                 $(this1.box).hide(200)
             });
         }

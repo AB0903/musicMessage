@@ -13,16 +13,12 @@ define(()=>{
    class jump{
        constructor(options){
            this.Id = getQueryVariable("id");
-           this.url = options.url || options.url1;
+           this.url = options.url;
            this.img = options.img;
            this.name = options.name;
            this.price = options.price;
            this.big = options.Bimg;
            this.aLink = options.aLink;
-           console.log(this.img[0]);
-           console.log(this.name[0]);
-           console.log(this.price[0]);
-           console.log(this.aLink[0]);
            this.load()
        }
        load(){
@@ -44,7 +40,7 @@ define(()=>{
            }
            this.img[0].src =this.record.url;
            this.name.html(this.record.name);
-           this.price.html(this.record.price);
+           this.price.html(this.record.pirce);
            this.big[0].src = this.record.url;
            this.aLink[0].href = `car.html?id=${this.record.showId}`
        }
