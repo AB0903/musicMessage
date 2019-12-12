@@ -3,8 +3,9 @@ define(()=>{
         constructor(options){
             this.options = options;
             this.data = [];
+            this.user2 =[];
+            this.user1 = "";
             this.add();
-            
         }
         add(){
             var this1 = this;
@@ -56,6 +57,7 @@ define(()=>{
                 left: 130,
                 backgroundColor:"#fff",
             }).appendTo(this.box);
+            this.password[0].type = "password";
             this.pass = $("<input>").css({
                 width:240,
                 lineHeight:"20px",
@@ -64,6 +66,7 @@ define(()=>{
                 left: 130,
                 backgroundColor:"#fff",
             });
+            this.pass[0].type = "password";
             this.options.login.on("click",function () {
                 $(this1.btn1).css({
                     top:165
@@ -123,16 +126,47 @@ define(()=>{
                 border:"none",
                 color:"#fff",
             }).html("注册").on("click",function () {
-                this1.obj = {
-                    user:this1.user.val(),
-                    pass:this1.password.val(),
-                };
-                this1.data.push(this1.obj);
-                setCookie("userMsg",JSON.stringify(this1.data),{
-                    expires:5
-                });
+                if(this1.user1){
+                    this1.user1 = getCookie("userMsg");
+                    this1.user2 = JSON.parse(this1.user1);
+                }
+                if(this1.user2.length===0){
+                    this1.obj = {
+                        user: this1.user.val(),
+                        pass: this1.password.val(),
+                    };
+                    this1.data.push(this1.obj);
+                    setCookie("userMsg", JSON.stringify(this1.data), {
+                        expires: 5
+                    });
+                    this1.user1 = getCookie("userMsg");
+                    this1.user2 = JSON.parse(this1.user1);
+                }else{
+                    this1.obj = {
+                        user: this1.user.val(),
+                        pass: this1.password.val(),
+                    };
+                    this1.data.push(this1.obj);
+                    for (let i = 0; i < this1.user2.length; i++) {
+                        console.log(this1.user2[i].user, this1.user.val());
+                        if (this1.user2[i].user === this1.user.val()) {
+                            alert("用户名已存在");
+                        }
+                        if (this1.user2[i].user !== this1.user.val()) {
+                            setCookie("userMsg", JSON.stringify(this1.data), {
+                                expires: 5
+                            });
+                            this1.user1 = getCookie("userMsg");
+                            this1.user2 = JSON.parse(this1.user1);
+                        }
+                    }
+                }
                 $(this1.box).hide(200)
             });
+            if(this.user1){
+                this.user1 = getCookie("userMsg");
+                this.user2 = JSON.parse(this1.user1);
+            }
         }
     }
     return Login;

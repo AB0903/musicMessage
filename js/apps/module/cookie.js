@@ -24,7 +24,7 @@ function setCookie(key,val,options){
 	var e = "";
 	if(options.expires){
 		var d = new Date();
-		d.setDate(d.getDate()+options.expires)
+		d.setDate(d.getDate()+options.expires);
 		e = ";expires="+d;
 	}
 	document.cookie = key+"="+ val + e + p;

@@ -26,7 +26,6 @@ define(()=>{
             var this1 = this;
             this.btn.on("click",function () {
                 this1.arr = getCookie("numGoods") ? JSON.parse(getCookie("numGoods")) : [];
-                // console.log(goods);
                 this1.obj = {
                     name:this1.key,
                     num: +this1.number.val(),
