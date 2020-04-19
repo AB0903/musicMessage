@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.margin {
+  width: 1210px;
+  margin: 0 auto; }
+
+main .Mmain {
+  margin-top: 50px;
+  display: flex; }
+  main .Mmain #left {
+    width: 400px;
+    height: 400px; }
+    main .Mmain #left .box {
+      width: 400px;
+      height: 400px;
+      border: 1px solid #000000;
+      position: relative; }
+      main .Mmain #left .box img {
+        width: 400px;
+        height: 400px; }
+      main .Mmain #left .box span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: .5;
+        background: #cccccc;
+        display: none; }
+    main .Mmain #left .big {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      z-index: 999;
+      left: 500px;
+      top: 360px;
+      border: 1px solid darkcyan;
+      overflow: hidden;
+      display: none; }
+      main .Mmain #left .big img {
+        width: 900px;
+        height: 900px;
+        position: absolute; }
+  main .Mmain #right {
+    width: 560px;
+    height: 412px;
+    margin-left: 50px; }
+    main .Mmain #right .name {
+      padding: 5px 0 0 0; }
+    main .Mmain #right .summary {
+      width: 100%;
+      margin-top: 30px;
+      background-color: #f7f7f7; }
+      main .Mmain #right .summary i {
+        margin-right: 3px;
+        font-size: 18px; }
+      main .Mmain #right .summary span {
+        font-size: 30px;
+        color: #ff6600;
+        font-weight: 500; }
+    main .Mmain #right .choose {
+      margin-top: 50px;
+      width: 560px;
+      height: 120px; }
+      main .Mmain #right .choose .clear {
+        height: 50px; }
+        main .Mmain #right .choose .clear .left {
+          float: left;
+          margin-right: 15px;
+          display: flex; }
+          main .Mmain #right .choose .clear .left input {
+            height: 50px;
+            width: 30px;
+            text-align: center;
+            display: block;
+            border: 1px solid #cccccc;
+            line-height: 50px; }
+          main .Mmain #right .choose .clear .left button {
+            border: 1px solid #cccccc;
+            border-left: none;
+            width: 20px;
+            font-size: 20px; }
+        main .Mmain #right .choose .clear .right {
+          float: left;
+          height: 50px; }
+          main .Mmain #right .choose .clear .right button {
+            width: 168px;
+            margin-right: 20px;
+            color: #ffffff;
+            width: 168px;
+            font: 700 18px/50px "";
+            text-align: center; }
+          main .Mmain #right .choose .clear .right .btn3 {
+            background-color: #FF0036; }
+          main .Mmain #right .choose .clear .right .btn4 {
+            background-color: #ff6600; }
+    main .Mmain #right .zhifu {
+      margin-top: 10px;
+      height: 20px;
+      line-height: 20px; }
+      main .Mmain #right .zhifu .dt {
+        float: left;
+        margin-right: 30px;
+        color: #999999; }
+      main .Mmain #right .zhifu .dd {
+        float: left; }
+        main .Mmain #right .zhifu .dd span {
+          float: left;
+          margin-bottom: 4px;
+          background: #ffffff;
+          margin-left: 15px; }
+          main .Mmain #right .zhifu .dd span i {
+            font-size: 16px; }

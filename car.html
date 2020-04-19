@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/car.css">
+</head>
+<body>
+<div id="shopping">
+    <div class="top">
+        <div class="logo">
+            <a href="index.html" title="音平商城">
+                <img src="images/logo.png">
+            </a>
+        </div>
+        <div class="cart">
+            <ul>
+                <li>1 我的购物车</li>
+                <li>2 确认订单信息</li>
+                <li>3 成功提交订单</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="wrap">
+            <p>
+                购物车里空空如也，赶紧去&nbsp;
+                <a href="index.html">逛逛吧></a>
+            </p>
+            <p>
+                或者您可以先进行&nbsp;
+                <a href="index.html">登录></a>
+            </p>
+        </div>
+    </div>
+</div>
+<div id="carBox">
+    <h3>全部商品&ensp;<span>1</span></h3>
+    <div class="cart">
+        <div class="head">
+            <div class="co1">
+                <input type="checkbox">
+                <label>全选</label>
+            </div>
+            <div class="co2">商品信息</div>
+            <div class="co3">单价(元)</div>
+            <div class="co4">数量</div>
+            <div class="co5">金额(元)</div>
+            <div class="co6">操作</div>
+        </div>
+        <div class="cart-c">
+<!--            <div class="goods">-->
+<!--                <ul>-->
+<!--                    <li>-->
+<!--                        <div class="fix">-->
+<!--                            <div class="cl1">-->
+<!--                                <input type="checkbox">-->
+<!--                            </div>-->
+<!--                            <div class="cl2">-->
+<!--                                <a><img src="images/one6.jpg"></a>-->
+<!--                                <h2>得胜专业录音麦克风 双面镀金大震膜多指向电容话筒</h2>-->
+<!--                            </div>-->
+<!--                            <div class="cl3">-->
+<!--                                <s>￥</s><span>1989.00</span>-->
+<!--                            </div>-->
+<!--                            <div class="cl4">-->
+<!--                                <span>-->
+<!--                                    <span class="minus">-</span>-->
+<!--                                    <input type="text">-->
+<!--                                    <span class="plus">+</span>-->
+<!--                                </span>-->
+<!--                            </div>-->
+<!--                            <div class="cl5">-->
+<!--                                <s>￥</s><span class="sum">1989.00</span>-->
+<!--                            </div>-->
+<!--                            <div class="cl6">-->
+<!--                                <button>删除</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+        </div>
+        <div class="toTal">
+            <div class="bar">
+                <div class="rt">
+                    <p class="allGoods">
+                        <span>总计金额</span>
+                        <s>￥</s><span class="itm">1989.00</span>
+                    </p>
+                    <p class="money">
+                        <span>订单金额(不含运费)</span>
+                        <span class="Real">
+                            <s>￥</s><em>1989.00</em>
+                        </span>
+                    </p>
+                    <button>去结算</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Footer">
+</div>
+<script src="js/libs/require.js" data-main ="js/apps/car"></script>
+<script src="js/libs/jquery.js"></script>
+<script>
+    $("#Footer").load("http://localhost/1911-server/online/public.html footer");
+</script>
+</body>
+</html>

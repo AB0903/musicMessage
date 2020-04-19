@@ -1,0 +1,84 @@
+.margin{
+    width: 1210px;
+    margin: 0 auto;
+}
+footer {
+  position: relative;
+  margin-top: 50px; }
+  footer .ribbon {
+    height: 65px;
+    background-color: #ff6600;
+    width: 100%; }
+    footer .ribbon .main ul {
+      display: flex;
+      justify-content: space-between;
+      width: 1210px; }
+      footer .ribbon .main ul li {
+        flex: 1;
+        text-align: center;
+        line-height: 65px;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 800; }
+  footer .inst {
+    height: 147px;
+    background-color: #ffffff;
+    padding: 40px 0; }
+    footer .inst .left {
+      float: left;
+      overflow: hidden;
+      width: 950px;
+      display: flex;
+      justify-content: space-between; }
+      footer .inst .left .dl {
+        float: left;
+        box-sizing: border-box; }
+        footer .inst .left .dl dt {
+          color: #333333;
+          font-weight: bold;
+          font-size: 16px; }
+        footer .inst .left .dl dd {
+          line-height: 24px;
+          font-size: 12px; }
+    footer .inst .right {
+      float: right;
+      position: relative;
+      width: 250px; }
+      footer .inst .right img {
+        position: absolute;
+        top: -20px; }
+      footer .inst .right .right-a {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        text-align: right;
+        color: #666666; }
+        footer .inst .right .right-a p {
+          font-size: 18px; }
+          footer .inst .right .right-a p strong {
+            color: #ff6600; }
+        footer .inst .right .right-a .last-p {
+          color: #ff6600;
+          border: 1px solid #ff6600;
+          border-radius: 5px;
+          padding: 5px 35px;
+          margin-top: 5px;
+          text-align: center; }
+  footer .info {
+    height: 140px;
+    background: #333333;
+    color: #a4a4a4;
+    padding: 20px 0; }
+    footer .info .c-fff {
+      color: #ffffff;
+      font-size: 16px; }
+    footer .info .mt-10 {
+      line-height: 22px;
+      margin-top: 10px; }
+      footer .info .mt-10 i {
+        color: #a4a4a4; }
+    footer .info .coo {
+      margin-top: 10px; }
+      footer .info .coo img {
+        width: 96px;
+        height: 35px; }

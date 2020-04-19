@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/details.css">
+</head>
+<body>
+    <div id="Top">
+
+    </div>
+    <main class="margin">
+        <div class="Mmain">
+            <div id="left">
+                <div class="box">
+                    <img src="images/show1.png" alt="">
+                    <span></span>
+                 </div>
+                <div class="big">
+                    <img src="images/show1.png" alt="">
+                </div>
+            </div>
+            <div id="right">
+                <div class="name"><h1>得胜TAK55麦克风搭配雅马哈UR RT2声卡 专业个人录音配音设备套装</h1></div>
+                <div class="summary">
+                    <span>价格</span>
+                    <i>￥</i><span>5100.00</span>
+                </div>
+                <div class="choose">
+                    <div class="clear">
+                        <div class="left">
+                            <input class="text" type="text" value="1">
+                            <button class="btn1">+</button>
+                            <button class="btn2">-</button>
+                        </div>
+                        <div class="right">
+                            <button class="btn3">立即购买</button>
+                            <button class="btn4"><a href="car.html">加入购物车</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="zhifu">
+                    <div class="dt">支&nbsp;&nbsp;&nbsp;付</div>
+                    <div class="dd">
+                        <span><i class="iconzhifubao iconfont"></i>支付宝</span>
+                        <span><i class="iconweixinzhifu iconfont"></i>微信</span>
+                        <span><i class="iconcaifutong iconfont"></i>财付通</span>
+                        <span><i class="iconbank iconfont"></i>银行卡</span>
+                        <span><i class="iconhuodaofukuan iconfont"></i>货到付款</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<div id="Footer">
+</div>
+</body>
+<script src="js/libs/require.js" data-main ="js/apps/show"></script>
+<script src="js/libs/jquery.js"></script>
+<!--<script src="js/apps/module/jquery.banner.js"></script>-->
+<script>
+    // $("#banner").banner({
+    //     items:$("#banner").find("img"),
+    //     list:false,
+    //     autoPlay:true
+    // })
+    $("#Footer").load("http://localhost/1911-server/online/public.html footer");
+    $("#Top").load("http://localhost/1911-server/online/public.html #header");
+
+</script>
+</html>

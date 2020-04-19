@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.margin {
+  width: 1210px;
+  margin: 0 auto; }
+
+.logo {
+  width: 100%; }
+  .logo img {
+    width: 100%; }
+
+#Top header {
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 36px;
+  background: #fcfcfc;
+  border-bottom: 1px solid #edeef0; }
+  #Top header #left span {
+    color: #666666; }
+  #Top header #left i {
+    color: #ff6600;
+    cursor: pointer; }
+  #Top header #right i {
+    font-size: 16px; }
+  #Top header #right span {
+    cursor: pointer;
+    margin: 0 10px; }
+
+#Top nav {
+  padding-top: 16px;
+  height: 140px; }
+  #Top nav .main {
+    height: 100px; }
+    #Top nav .main .left {
+      float: left; }
+    #Top nav .main .right {
+      float: left;
+      margin-left: 10px;
+      width: 560px;
+      height: 100px;
+      margin-top: 18px; }
+      #Top nav .main .right .top input {
+        width: 458px;
+        height: 34px;
+        font-size: 14px;
+        padding-left: 10px;
+        line-height: 18px;
+        border: 2px solid #ff6600; }
+      #Top nav .main .right .top button {
+        width: 88px;
+        height: 38px;
+        text-align: center;
+        background-color: #ff6600;
+        color: #ffffff;
+        font-size: 16px;
+        border: none; }
+      #Top nav .main .right .bottom {
+        margin-top: 5px;
+        overflow: hidden;
+        width: 100%;
+        height: 18px; }
+        #Top nav .main .right .bottom a {
+          float: left;
+          margin-right: 10px;
+          white-space: nowrap; }
+  #Top nav .nav {
+    position: relative;
+    height: 40px; }
+    #Top nav .nav .all-hook {
+      width: 210px;
+      background-color: #ff6600;
+      height: 40px;
+      position: absolute;
+      left: 0; }
+      #Top nav .nav .all-hook h2 {
+        font-size: 14px;
+        overflow: hidden; }
+        #Top nav .nav .all-hook h2 a {
+          line-height: 40px;
+          background-color: #ff6600;
+          padding-left: 10px;
+          display: block;
+          color: #ffffff;
+          height: 40px;
+          width: 210px; }
+      #Top nav .nav .all-hook .BoxUl {
+        position: absolute;
+        height: 270px;
+        background-color: rgba(50, 50, 50, 0.9);
+        width: 210px;
+        left: 0;
+        top: 40px; }
+        #Top nav .nav .all-hook .BoxUl li {
+          padding: 10px 0 9px 15px;
+          clear: both;
+          border-bottom: 1px solid #555555;
+          position: relative; }
+          #Top nav .nav .all-hook .BoxUl li .tx {
+            font-size: 16px; }
+            #Top nav .nav .all-hook .BoxUl li .tx a {
+              color: #ffffff; }
+    #Top nav .nav .nav-index {
+      position: absolute;
+      left: 210px;
+      height: 40px; }
+      #Top nav .nav .nav-index ul {
+        list-style: none; }
+        #Top nav .nav .nav-index ul li {
+          float: left;
+          margin-left: 50px;
+          position: relative; }
+          #Top nav .nav .nav-index ul li a {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            font-weight: 700; }
